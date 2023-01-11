@@ -1,0 +1,34 @@
+body {
+    background: url(https://images.pexels.com/photos/38271/ipad-map-tablet-internet-38271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.a {
+    text-align: center;
+    color:white;
+    opacity: 1;
+    animation-name: trei;
+    animation-duration: 3s;
+ }
+
+
+.b {
+    text-align: center;
+    justify-content: center;
+    margin:0;
+    margin-left: 400px;
+}
+ 
+.button {
+    text-align: center;
+}
+
+
+ @keyframes trei {
+    from {color: antiquewhite;}
+    to {color: pink;}
+}
+@media (max-width: 800px) {
+
+}

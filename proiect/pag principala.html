@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="pag principala.css">
+    <script src="pag principala.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="menu-area">
+        <ul>
+            <li>Acasa</li>
+            <li><a href="recenzii.html">Recenzii</a></li>
+            <li><a href="fotografii.html">Fotografii</a>
+                <ul class="dropdown">
+                    <li>Fotografii cu mancare</li>
+                    <li>Fotografii cu bautura</li>
+                    <li>Fotografii cu desert</li>
+                </ul>
+            </li>
+            <li><a href="meniu.html">Meniu</a>
+                <ul class="dropdown">
+                    <li>Mancare</li>
+                    <li>Bautura</li>
+                    <li>Desert</li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a>
+                <ul class="dropdown">
+                    <li>Numar de telefon</li>
+                    <li>Email</li>
+                </ul>
+            </li>
+            <li><a href="adresa.html">Adresa</a></li>
+            <li><a href="autentificare.html">Login</a></li>
+        </ul>
+    </div>
+    <h1 class="text">-RESTAURANT FabFood-🍔</h1>
+    <h1 class="text2">Ne place sa mancam bine.</h1>
+    <h1 class="text3">Mancare, oameni buni si distractie impreuna</h1>
+     <div class="partneri">
+         <h2>Partenerii nostri</h2>
+         <div class="p1">
+         <h3>Moet</h3>
+        </div>
+        <div class="p2">
+         <h3>Glo</h3>
+        </div>
+        <div class="p3">
+         <h3>Zarea</h3>
+        </div>
+     </div>
+     <h2 class="text4">Poftiti pe la noi</h2>
+        <h2 class="text4" onclick="changeText(this)">Click on this text!</h2>
+       
+       <script>
+       function changeText(id) {
+         id.innerHTML = "Intrati pe adresa sa vedeti unde ne aflam!";
+       }
+       </script>
+       <h1 id="id1">Pentru rezervari intrati pe contact sa vedeti numarul de telefon </h1>
+
+       <button type="button" 
+       onclick="document.getElementById('id1').style.color = 'blue'">
+       Click Me!</button>
+</body>
+
+
+
+

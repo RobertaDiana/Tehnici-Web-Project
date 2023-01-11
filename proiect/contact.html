@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="nr">
+        <h1 class="nr">Numar de telefon</h1>
+        <h2 class="a">Daca doriti o rezervare, puteti sa ne sunati la numarul de telefon afisat</h2>
+        <h2 class="b">0712345678</h2>
+    </div>
+        <div id="email">
+        <h1 class="email">Email</h1>
+        <h2 class="c">Pentru orice intrebare, nu ezitati sa ne contactati si pe email</h2>
+        <h2 class="d">www.fabfood.com</h2>
+        <h1 class="e">Va asteptam la noi!😊</h1>
+    </div>
+    <h1>Pentru rezervari, va rugam sa completati formularul de mai jos</h1>
+    <div class="formular">
+        <form >
+            <label for="fname">Prenumele vostru: </label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <label for="lname">Numele vostru: </label><br>
+            <input type="text" id="lname" name="lname" ><br>
+            <label for="uemail">Emailul dumneavoastra: </label><br>
+            <input type="text" id="uemail" mail="uemail" ><br>
+            <label for="etelefon">Numarul dumneavoastra de telefon: </label><br>
+            <input type="number" id="etelefon" telefon="etelefon" ><br>
+        <p>Alegeti ora pentru care se face rezervarea</p>
+            <input type="radio" id="17.00" name="ora">
+            <label for="17.00">17.00</label><br>
+            <input type="radio" id="18.00" name="ora">
+            <label for="18.00">18.00</label><br>
+            <input type="radio" id="19.00" name="ora">
+            <label for="19.00">19.00</label><br>
+            <input type="radio" id="20.00" name="ora">
+            <label for="20.00">20.00</label><br>
+            <input type="radio" id="21.00" name="ora">
+            <label for="21.00">21.00</label><br>
+            <label for="placere">V-a placut formularul?</label>
+            <input type="range" id="placere" name="placere" min="0" max="50"><br>
+            <label for="rezervare">Doriti sa mancati?</label> 
+            <select id="rezervare" name="rezervarelist" form="rezervareform"><br> 
+            <option value="Da">Da</option> 
+            <option value="Nu">Nu</option>   
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>

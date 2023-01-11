@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    background-color: antiquewhite;
+}
+
+.food {
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+    animation: mymove 5s infinite;
+    font-weight: bold;
+    position: absolute;
+}
+
+/* #food {animation-timing-function: linear;} */
+
+@keyframes mymove {
+  from {left: 100px;}
+  to {left: 400px;}
+}
+
+
+
+#mancare {
+  background-image: url(https://www.lensofalex.com/wp-content/uploads/2020/03/102708977_2070061533137470_7680145611152162816_o.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.drinks {
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+    animation-name: prima;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes prima {
+    from {color:red;}
+    to {color:blue;}
+}
+
+#bautura {
+    background-image: url(https://imagini.ha-ha.ro/imagini/bauturi/cocktail_party.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.desserts {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: aqua;
+    animation-name: doi;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
+
+#desert {
+    background-image: url(https://cdn.pixabay.com/photo/2015/02/11/12/58/cake-632389_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes doi {
+    0%   {color:antiquewhite}
+    25%  {color:aqua}
+    50%  {color:aquamarine}
+    75%  {color:azure}
+    100% {color:aliceblue}
+}
+
+@media (max-width: 800px) {
+    @keyframes mymove {
+        from {left: 0px;}
+        to {left: 100px;}
+    }
+}
+

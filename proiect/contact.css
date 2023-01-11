@@ -1,0 +1,104 @@
+body {
+    background: url(https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.nr {
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    animation: mymove 5s infinite;
+    font-weight: bold;
+    position: relative;
+}
+
+#nr {animation-timing-function: linear;}
+
+@keyframes mymove {
+  0% {left: 0px;}
+  50% {left: 300px;}
+  100% {left: 0px;}
+
+}
+
+.email {
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    color:black; animation-name: prima;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes prima {
+    from {color:purple;}
+    to {color:green;}
+
+}
+
+.e {
+    text-align:center;
+    animation-name: doi;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
+
+@keyframes doi {
+    0%   {color:beige; left:0px; top:0px;}
+    25%  {color:blue; left:200px; top:0px;}
+    50%  {color:bisque; left:200px; top:200px;}
+    75%  {color:brown; left:0px; top:200px;}
+    100% {color:blueviolet; left:0px; top:0px;}
+  }
+
+.b {
+        width: 100px;
+        height: 100px;
+        background: beige;
+        position: relative;
+        animation-name: trei;
+        animation-duration: 3s;  
+        animation-fill-mode: backwards;
+      }
+      
+@keyframes trei {
+        from {top: 0px; color:azure;}
+        to {top: 50px;}
+      }
+
+.d {
+  width: 100px;
+  height: 100px;
+  background-color: azure;
+  position: relative;
+  animation-name: patru;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;  
+}
+
+.formular{
+  border-color: red;
+  background-color: beige;
+  height:500px;
+  width: 500px;
+  border: 2px;
+  margin-left: 500px;
+  margin-right: 100px;
+  
+}
+
+form {
+  padding:50px;
+  margin-left: 100px;
+}
+
+@media (max-width: 800px) {
+  .nr {
+    animation: mymove 1s infinite;
+  }
+  @keyframes mymove {
+    0% {top: 0px;}
+    50% {top: 10px;}
+    100% {top: 0px;}
+  }
+}

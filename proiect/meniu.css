@@ -1,0 +1,62 @@
+.flex-container {
+    display: flex;
+    background-color: beige;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  .flex-container > div {
+    background-color: pink;
+    margin: 10px;
+    padding: 20px;
+    font-size: 80px;
+    text-align:center;
+    animation-name: prima;
+    animation-duration: 5s;
+  }
+
+  @keyframes prima {
+      from {background:red;}
+      to {background: blue;}
+  }
+
+  body {
+
+    background-color: antiquewhite;
+  }
+
+  .a {
+      text-align:center;
+     
+      color:black;
+      border: 5px solid black;
+      animation: mymove 5s infinite;
+      animation-duration: 5s;
+  }
+
+  #a {animation-timing-function: linear;}
+  
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+  .b {
+    text-align:center;
+    color:black;
+    border: 5px solid black;
+    
+}
+
+.c {
+    color:black;
+    border: 5px solid black;
+    text-align:center;
+   
+}

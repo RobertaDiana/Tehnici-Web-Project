@@ -1,0 +1,203 @@
+
+
+body{
+    background: aquamarine;
+    background-size: cover;
+    background: url(https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?cs=srgb&dl=pexels-elevate-1267320.jpg&fm=jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text {
+   text-align: center;
+   font-family: Papyrus;
+   color: black;
+   text-shadow: 2px 2px 5px red;
+   border-style: outset;
+   animation-name: trei;
+   animation-duration: 3s;
+}
+
+@keyframes trei {
+   from {background-color: antiquewhite;}
+   to {background-color: pink;}
+  }
+
+.text2 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    border-style: inset;
+    animation-name: doi;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+}
+
+.partneri {
+    text-align:center;
+    border-style:hidden;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    animation: mymove 5s infinite;
+    font-weight: bold;
+    position: relative;
+}
+
+#partneri {animation-timing-function: linear;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+.p1 {
+    text-align:left;
+}
+
+.p2 {
+    text-align:left;
+}
+
+.p3 {
+    text-align:left;
+}
+
+@keyframes doi {
+    0%   {background-color:antiquewhite; left:0px; top:0px;}
+    25%  {background-color:aqua; left:200px; top:0px;}
+    50%  {background-color:aquamarine; left:200px; top:200px;}
+    75%  {background-color:azure; left:0px; top:200px;}
+    100% {background-color:aliceblue; left:0px; top:0px;}
+  }
+
+.text3 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    border-style: double;
+    transition: width 2s, height 4s;
+    animation-name: prima;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes prima {
+    from {background-color:red;}
+    to {background-color:blue;}
+}
+
+.menu-area ul {
+    list-style: none;
+}
+.menu-area {
+    display: inline-block;
+    text-align: center;
+}
+.menu-area li:hover{
+    background: #029bd5;
+}
+.menu-area > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: #313131;
+    color: #fff;
+}
+.menu-area > ul > li{
+    position:relative;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 14px;
+    letter-spacing: 1px;
+    float: left;
+    width: 136px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.dropdown {
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+.dropdown li {
+    background: #313131;
+    display: none;
+}
+.dropdown li:hover {
+    background :#029bd5;
+}
+.menu-area li:hover > .dropdown li{
+    display: block;
+}
+.menu-area li:hover > .dropdown {
+    perspective: 100px;
+}
+.menu-area li:hover > .dropdown li{
+    transform-origin: top center;
+    opacity: 0;
+}
+.menu-area li:hover > .dropdown li:nth-child(1){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: -150ms;
+}
+
+.menu-area li:hover > .dropdown li:nth-child(2){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 0ms;
+}
+
+.menu-area li:hover > .dropdown li:nth-child(3){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 150ms;
+}
+
+.menu-area li:hover > .dropdown li:nth-child(4){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 300ms;
+}
+.menu-area li:hover > .dropdown li:nth-child(5){
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 450ms;
+}
+
+.text4 {
+    text-align: center;
+    border-style: hidden;
+    border-style: outset;
+    background-color: red;
+}
+
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50%{
+        transform: rotateX(20deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 0;
+    }
+    @keyframes mymove {
+        from {top: 0px;}
+        to {top: 100px;}
+      }
+}
+
